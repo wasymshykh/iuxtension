@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Naya IU",
-  "description": "Iqra University website fixer. A small educational project, no way affiliated with IU. More cool updates on the way!",
-  "version": "0.0.1",
+  "name": "IU X Tension",
+  "description": "IU X Tension is currently under development. As of right now this minor release includes some quick fixes for IULMS.",
+  "version": "0.0.2",
   "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
   "content_scripts": [{ "matches": ["https://*.iulms.edu.pk/*"], "js": ["nayaContentScript.js"]  }],
   "web_accessible_resources": [{ "resources": ["style/nayaStyle.css"], "matches": [], "extension_ids": [] }]

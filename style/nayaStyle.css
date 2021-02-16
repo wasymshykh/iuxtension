@@ -195,11 +195,12 @@ table#sic-links {
 }
 #sic-links tbody tr td a {
   display: flex;
-  background: #f4f4f4;
+  background: #ffffff;
   padding: 1em;
-  margin: 0.2em;
+  margin: 0.3em;
   transition: 0.2s all;
   border: 1px solid transparent;
+  box-shadow: 0px 0px 10px 1px #e0e0e0;
 }
 #sic-links tbody tr td a:hover {
   border: 1px solid #1b1c55;
@@ -288,4 +289,205 @@ table#sic-links tbody tr:not(:first-child) td img {
 
 #navbtnarea .navbutton {
     background: #1b1c55;
+}
+
+.d-none {
+  display: none;
+}
+
+.page-title {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-family: 'Calibri', sans-serif;
+  font-weight: 700;
+  color: #1b1c55;
+  text-align: center;
+  height: auto !important;
+  margin-top: 1em;
+}
+.page-title > div {
+  float: none !important;
+}
+
+.exam_result_table tr td {
+  border: 1px solid #f9f9f9;
+  padding: 1em 1em;
+  font-size: 1.1em;
+  opacity: 0.9;
+  font-family: Calibri, sans-serif;
+}
+
+.exam_result_table tr:last-child td {
+  background-color: #adadde;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.exam_result_table tr:not(.tableHeaderStyle):hover td {
+  opacity: 1;
+  background-color: #f3f3f3;
+}
+
+.exam_result_table tr.tableHeaderStyle {
+  background: linear-gradient(#4849af, #2f3083);
+}
+
+.exam_result_table tr.tableHeaderStyle:hover  {
+  background: linear-gradient(#2f3083, #2f3083);
+}
+
+.exam_result_table tr.tableHeaderStyle td {
+  font-size: 0.9em;
+}
+
+.exam_result_table tr td.grade {
+  font-weight: 700;
+  background-color: #adadde;
+}
+
+.exam_result_table tr:last-child:hover td,
+.exam_result_table tr:not(.tableHeaderStyle):hover td.grade {
+  background-color: #4849af;
+  color: #ffffff;
+}
+
+.exam_result_table tr.dim {
+  opacity: 0.5;
+}
+
+#degreeSelection {
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5em 0.5em;
+  background-color: #1b1c55;
+  color: #fff;
+  font-size: 0.9em;
+  height: auto;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: 'Calibri', sans-serif;
+  box-sizing: border-box !important;
+}
+
+#transcript table {
+  max-width: 700;
+  width: 100% !important;
+}
+
+#transcript > table > tbody > tr > td {
+  padding: 0 !important;
+}
+
+#transcript table .transcript-head {
+  height: 3px;
+  background-color: #4849af;
+}
+
+.transcript-table-head {
+  font-size: 1em;
+  background: linear-gradient(#4849af, #2f3083);
+  height: auto;
+  color: #ffffff;
+  text-align: left;
+}
+
+.transcript-table-head th {
+  font-size: 1em;
+  font-family: 'Calibri', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.4em 0.6em;
+}
+
+.transcript-content {
+  border: 1px solid #f5f5f5 !important;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
+.transcript-content td {
+  font-size: 1.1em !important;
+  font-family: 'Calibri', sans-serif;
+  height: auto !important;
+  padding: 0.4em 0.8em;
+}
+
+.transcript-table-footer {
+  font-size: 1em;
+}
+.transcript-table-footer td {
+  background-color: #adadde;
+  font-size: 1.4em !important;
+  text-align: center !important;
+  font-weight: 700;
+  padding: 1em 1em;
+  font-family: Calibri, sans-serif;
+  color: #1b1c55;
+  height: auto !important;
+}
+
+.transcript-content:hover {
+  opacity: 1;
+  background-color: #f3f3f3;
+}
+
+.grades-row {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+}
+
+.grades-row-box {
+  flex: 1;
+  text-align: center;
+  padding: 1em 0.5em;
+  background-color: #f9f9f9;
+  margin: 0.5em 0.5em 1em 0.5em;
+}
+
+.grades-row-box h3 {
+  font-size: 1.6em;
+  font-weight: 700;
+  font-family: 'Calibri', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2f3083;
+}
+
+.grades-row-box p {
+  padding: 0.3em 0.6em;
+  background: #ffffff;
+  color: #1b1c55;
+  font-weight: 700;
+  font-size: 0.9em;
+  display: table;
+  margin: 0 auto;
+  box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.05);
+}
+
+.grades-row-box:nth-child(1) p {
+  background-color: #af4848;
+  color: #ffffff;
+}
+
+.grades-row-box:nth-child(2) p {
+  background-color: #af4881;
+  color: #ffffff;
+}
+
+.grades-row-box:nth-child(3) p {
+  background-color: #a448af;
+  color: #ffffff;
+}
+
+.grades-row-box:nth-child(4) p {
+  background-color: #48a6af;
+  color: #ffffff;
+}
+
+.grades-row-box:nth-child(5) p {
+  background-color: #87af48;
+  color: #ffffff;
 }
